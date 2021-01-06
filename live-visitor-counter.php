@@ -18,3 +18,10 @@ function lvc_enqueue_assets() {
     );
 }
 add_action('wp_enqueue_scripts', 'lvc_enqueue_assets');
+
+function lvc_render_counter() {
+    if (!is_single()) return;
+
+    echo '<div id="lvc-counter">Loading viewers...</div>';
+}
+add_action('wp_footer', 'lvc_render_counter');
