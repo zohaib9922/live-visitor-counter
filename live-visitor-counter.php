@@ -16,6 +16,13 @@ function lvc_enqueue_assets() {
         '1.0.0',
         true
     );
+
+    wp_enqueue_style(
+        'lvc-css',
+        plugin_dir_url(__FILE__) . 'assets/css/lvc.css',
+        array(),
+        '1.0.0'
+    );
 }
 add_action('wp_enqueue_scripts', 'lvc_enqueue_assets');
 
