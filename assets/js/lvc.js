@@ -1,5 +1,7 @@
 function getRandomVisitors() {
-    return Math.floor(Math.random() * 25) + 5;
+    const base = 15;
+    const fluctuation = Math.floor(Math.random() * 10);
+    return base + fluctuation;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
