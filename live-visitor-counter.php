@@ -3,7 +3,7 @@
  * Plugin Name: Live Visitor Counter
  * Description: Shows live visitor count on posts/pages.
  * Author: Zohaib Hassan
- * Version: 1.0.0
+ * Version: 1.1.0
  */
 
 if (!defined('ABSPATH')) exit;

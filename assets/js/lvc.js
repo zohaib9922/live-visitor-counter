@@ -7,6 +7,8 @@ function getRandomVisitors() {
 document.addEventListener("DOMContentLoaded", function () {
 
     const counter = document.getElementById("lvc-counter");
+    
+    if (!counter) return;
 
     function updateCounter() {
         const visitors = getRandomVisitors();
